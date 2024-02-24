@@ -1,0 +1,44 @@
+@import "../../styles.scss";
+
+.mat-elevation-z8 {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px;
+  overflow: hidden;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+
+.mat-header-cell,
+td {
+  border: 1px solid $primary-color;
+  font-size: larger;
+  padding: 12px;
+  text-align: center;
+}
+
+th[mat-header-cell] {
+  background-color: $primary-color;
+  font-weight: bold;
+  text-align: center;
+}
+
+tr[mat-row] {
+  &:nth-child(even) {
+    background-color: $even-row-color;
+  }
+
+  &:hover {
+    background-color: $hover-row-color;
+  }
+}
+
+.mat-cell {
+  background-color: $even-row-color;
+  font-size: large;
+}
